@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/SujanShankar/mintpay-warmup.git'
+                git branch: 'main', url: 'https://github.com/SujanShankar/mintpay-warmup.git'
             }
         }
 
